@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="features"><div class="tools">
+            <button class="pen">pen</button>
+           
+        </div>
+        <canvas id="canvas"></canvas>
+           
+           <div class="button">
+            <!-- <button onclick="darkbulb()" type="button" class="bulb"><img src="" alt="BULB"></button> -->
+            <button onclick="undo()"type="button" class="button-1 pen">undo</button>
+            <button onclick="clear_canvas()"type="button" class="button-2 pen">clear</button>
+        </div>
+        </div>
+        <div class="colors">
+            <div onclick="change_color(this)" class="color" style="background: red;"></div>
+            <div onclick="change_color(this)"  class="color" style="background: rgb(0, 255, 55);"></div>
+            <div onclick="change_color(this)" class="color" style="background: rgb(49, 6, 204);"></div>
+            <div onclick="change_color(this)" class="color" style="background: rgb(231, 189, 0);"></div>
+            <input onInput="draw_color=this.value" type="color" class="colorpicker">
+            <input onInput="draw_width=this.value"type="range" min="1" max="100" class="thickness">
+        </div>
+    </div>
+    <script src="canvas.js"></script>
+</body>
+</html>
